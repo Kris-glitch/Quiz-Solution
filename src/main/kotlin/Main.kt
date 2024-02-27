@@ -13,7 +13,6 @@ fun main(args: Array<String>) {
     }
 
     val viewModel: ReceiptDetailsViewModel by inject(ReceiptDetailsViewModel::class.java)
-
     viewModel.getReceiptDetails()
 
     runBlocking {

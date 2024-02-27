@@ -41,9 +41,7 @@ class ReceiptDetailsRepositoryImplementation(
                 it.copy(loading = false, lastException = e)
             }
         }
-
         return receiptDetailFlow
-
     }
 
     private fun mapReceiptDetailsDTO(responseList: List<ReceiptDetailsDTOItem>): ReceiptDetails {
@@ -60,7 +58,6 @@ class ReceiptDetailsRepositoryImplementation(
             )
             receiptDetailsList.add(receiptDetailsItem)
         }
-
         return ReceiptDetails(receiptDetailsList.toList())
     }
 
